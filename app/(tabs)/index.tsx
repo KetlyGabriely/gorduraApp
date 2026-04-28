@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import AppBar from "./AppBar";
 
 export default function App() {
   const [peso, setPeso] = useState<string>("");
@@ -40,6 +41,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+
+      <AppBar title="Calculadora de Gordura"/>
       <Text style={styles.title}>Calculadora de Gordura</Text>
 
       <TextInput
